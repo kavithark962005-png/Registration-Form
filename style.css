@@ -11,8 +11,17 @@ form .formrow {
   color: black;
   border-radius: 10px;
   margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
 }
 button {
+    display: flex;
   margin: 20px;
   width: 100px;
   cursor: pointer;
@@ -22,6 +31,8 @@ button {
   padding: 10px;
   background-color: lavender;
   color: black;
+  align-items: center;
+  justify-content: center;
 }
 button:hover {
   background-color: darkorchid;
@@ -33,6 +44,7 @@ input[type="radio"] {
 input:focus {
   outline: 3px solid purple;
   outline-offset: 2px;
+  border-radius: 5px;
 }
 label {
   color: purple;
@@ -47,8 +59,30 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
-h1{
+h1 {
   font-size: 36px;
-
 }
-
+ input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="tel"]{
+    padding: 7px;
+    border-radius: 5px;
+    border: 2px solid;
+  }
+@media (max-width: 600px) {
+  .main {
+    width: 95%;
+    padding: 10px;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="tel"] {
+    width: 100%;
+    font-size: 16px;
+  }
+  label {
+    font-size: 14px;
+  }
+}
