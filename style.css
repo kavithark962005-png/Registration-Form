@@ -10,8 +10,7 @@ form .formrow {
   background-color: rgba(245, 168, 232, 0.747);
   color: black;
   border-radius: 10px;
-  
-  
+  margin-top: 50px;
 }
 button {
   margin: 20px;
@@ -35,10 +34,21 @@ input:focus {
   outline: 3px solid purple;
   outline-offset: 2px;
 }
-label{
+label {
   color: purple;
   font-weight: bolder;
 }
-body{
+body {
   background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
+h1{
+  font-size: 36px;
+
+}
+
